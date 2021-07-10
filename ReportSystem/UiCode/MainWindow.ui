@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1204</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CMRC-ReportSystem</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="3,5">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget_ship_select">
+          <column>
+           <property name="text">
+            <string>船舶筛选</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>服务中</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>待服务</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>服务中（在航）</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>服务中（在港）</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>台风服务</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>服务结束</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>航次结束</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>评估完成</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>航次中断</string>
+            </property>
+           </item>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser_main_window">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;反馈：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,1">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QComboBox" name="comboBox"/>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButton_update">
+              <property name="text">
+               <string>更新值班表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_del">
+              <property name="text">
+               <string>删除值班表</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_main_window">
+          <column>
+           <property name="text">
+            <string>Date1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Date2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>船名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>航次号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>时次</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>预报</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>日报</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>备注</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
