@@ -1,6 +1,6 @@
 from UiCode.Ui_MainWindow import Ui_MainWindow
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox,QMessageBox,QInputDialog,QLineEdit,QMenu,QTextEdit,QLabel
+from PyQt5.QtWidgets import QMessageBox,QMessageBox,QInputDialog,QLineEdit,QMenu,QTextEdit,QLabel,QTableWidget
 from PyQt5.QtCore import QObject, Qt
 import sys
 # dict_list {
@@ -23,23 +23,20 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui_mian.comboBox.addItems(result)
         self.ui_mian.tableWidget_main_window.setRowCount(10)
 
-
         """
-        添加文本编辑，选中文本，右键菜单功能
+        添加文本编辑
         """
-        textEdit=QTextEdit()
-        
-        textEdit.setMinimumHeight(200)
-        tc = textEdit.textCursor()
-        text = tc.selectedText()
-        textEdit.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
-        print(text)
-        if text != '':
-            
-            textEdit.customContextMenuRequested[QtCore.QPoint].connect(self.texthighlit)
+        text = QTableWidget()
+        text.setRowCount(5)
+        text.setColumnCount(2)
+        text.verticalHeader().setVisible(False) 
+        text.horizontalHeader().setVisible(False) 
+        text.resizeRowsToContents()
+        text.resizeColumnsToContents()
+        text.setColumnWidth(0, 80)
+        text.horizontalHeader().setStretchLastSection(True)
+        self.ui_mian.tableWidget_main_window.setCellWidget(0, 7, text)
 
-
-        self.ui_mian.tableWidget_main_window.setCellWidget(1, 7, textEdit)
         """
             默认选中的是服务中船舶
             读取最新的Mysql里的合同库获取所有服务中船舶
@@ -61,11 +58,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui_mian.tableWidget_main_window.customContextMenuRequested.connect(self.generateMenu)  ####右键菜单
 
     def generateMenu(self, pos):
-        print( pos)
         row_num = -1
         for i in self.ui_mian.tableWidget_main_window.selectionModel().selection().indexes():
             row_num = i.row()
-        print(row_num)
         menu = QMenu()
         item1 = menu.addAction(u"日报")
         item2 = menu.addAction(u"三天预报")
@@ -74,23 +69,8 @@ class MainWindow(QtWidgets.QMainWindow):
         item3 = menu.addAction(u"其他报文")
         action = menu.exec_(self.ui_mian.tableWidget_main_window.mapToGlobal(pos))
         #if row_num < 2:
-    def texthighlit(self, pos):
-        # tc = textEdit.textCursor()
-        # print(tc.selectedText())#打印出所选择的文本
-        # tc.removeSelectedText()
-        # textEdit.setFocus()
-
-        print( pos)
-        row_num = -1
-        for i in self.ui_mian.tableWidget_main_window.selectionModel().selection().indexes():
-            row_num = i.row()
-        print(row_num)
-        menu = QMenu()
-        item1 = menu.addAction(u"添加标记")
-        item2 = menu.addAction(u"取消标记")
 
 
-        action = menu.exec_(self.ui_mian.tableWidget_main_window.mapToGlobal(pos))
     """
     根据当前日期，更新值班表格
     """
