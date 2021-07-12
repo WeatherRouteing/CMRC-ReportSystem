@@ -126,12 +126,22 @@ p, li { white-space: pre-wrap; }
          <widget class="QTableWidget" name="tableWidget_main_window">
           <column>
            <property name="text">
-            <string>Date1</string>
+            <string>Three_days_Date1</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Date2</string>
+            <string>Three_days_Date2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Five_days_Date1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Five_days_Date2</string>
            </property>
           </column>
           <column>
@@ -151,7 +161,12 @@ p, li { white-space: pre-wrap; }
           </column>
           <column>
            <property name="text">
-            <string>预报</string>
+            <string>三天预报</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>五天预报</string>
            </property>
           </column>
           <column>
