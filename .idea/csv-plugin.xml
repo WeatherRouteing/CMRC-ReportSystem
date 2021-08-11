@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="D:\工作\代码\发报系统\代码\发报系统2_0.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\ReportSystem\CMRC-ReportSystem.py">
           <value>
             <Attribute>
