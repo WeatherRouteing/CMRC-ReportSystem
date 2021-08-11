@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SendView</class>
+ <widget class="QDialog" name="SendView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>日报：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>发送</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>不发送</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>数据包：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>发送</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <row>
+            <property name="text">
+             <string>数据包</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>三天预报</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>五天预报</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>航次评估报</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>时次</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>生成时间</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>值班日志：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pushButton_daily_report">
+         <property name="text">
+          <string>日报</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_three_days">
+         <property name="text">
+          <string>三天预报</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_five_days">
+         <property name="text">
+          <string>五天预报</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_est">
+         <property name="text">
+          <string>航次评估报</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_other">
+         <property name="text">
+          <string>其他报文</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
