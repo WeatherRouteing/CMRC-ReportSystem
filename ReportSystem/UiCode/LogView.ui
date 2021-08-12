@@ -102,6 +102,11 @@
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
             </property>
+            <row>
+             <property name="text">
+              <string/>
+             </property>
+            </row>
             <column>
              <property name="text">
               <string>时间</string>
@@ -110,6 +115,11 @@
             <column>
              <property name="text">
               <string>事项</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>类别</string>
              </property>
             </column>
            </widget>
@@ -136,6 +146,11 @@
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
             </property>
+            <row>
+             <property name="text">
+              <string/>
+             </property>
+            </row>
             <column>
              <property name="text">
               <string>时间</string>
@@ -144,6 +159,11 @@
             <column>
              <property name="text">
               <string>事项</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>类别</string>
              </property>
             </column>
            </widget>

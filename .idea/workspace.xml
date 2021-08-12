@@ -5,10 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReportSystem/CMRC-ReportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/CMRC-ReportSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/LogView.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/LogView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/LogView.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/LogView.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/MainWindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/ShipParameter.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_MainWindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_ShipParameter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_LogView.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_LogView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_loginput.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/Ui_loginput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportSystem/UiCode/loginput.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ReportSystem/UiCode/loginput.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -44,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../工作/代码脚本/导航报文平台/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../工作/代码/发报系统" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,6 +69,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.CMRC-ReportSystem">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CMRC-ReportSystem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ReportSystem" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReportSystem/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="发报系统2_0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CMRC-ReportSystem" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +138,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.CMRC-ReportSystem" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.发报系统2_0" />
       </list>
     </recent_temporary>
@@ -129,6 +166,8 @@
       <workItem from="1628471425345" duration="2685000" />
       <workItem from="1628559842449" duration="21076000" />
       <workItem from="1628657708951" duration="19000000" />
+      <workItem from="1628730271139" duration="5932000" />
+      <workItem from="1628737380505" duration="19834000" />
     </task>
     <servers />
   </component>
@@ -152,14 +191,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ReportSystem/CMRC-ReportSystem.py</url>
-          <line>84</line>
+          <line>205</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CMRC_ReportSystem$CMRC_ReportSystem.coverage" NAME="CMRC-ReportSystem Coverage Results" MODIFIED="1628681137826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReportSystem" />
+    <SUITE FILE_PATH="coverage/CMRC_ReportSystem$CMRC_ReportSystem.coverage" NAME="CMRC-ReportSystem Coverage Results" MODIFIED="1628760909124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReportSystem" />
     <SUITE FILE_PATH="coverage/CMRC_ReportSystem$2_0.coverage" NAME="发报系统2_0 Coverage Results" MODIFIED="1626927556087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../工作/代码/发报系统/代码" />
+    <SUITE FILE_PATH="coverage/CMRC_ReportSystem$1.coverage" NAME="1 Coverage Results" MODIFIED="1628753331014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ReportSystem" />
   </component>
 </project>

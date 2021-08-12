@@ -264,7 +264,12 @@
         </column>
         <column>
          <property name="text">
-          <string>备注</string>
+          <string>日志</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>编辑日志</string>
          </property>
         </column>
        </widget>
@@ -272,11 +277,11 @@
       <item>
        <widget class="QTabWidget" name="tabWidget_inf_captain">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab">
          <attribute name="title">
-          <string>预报员</string>
+          <string>天气</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
@@ -305,7 +310,7 @@
         </widget>
         <widget class="QWidget" name="weather">
          <attribute name="title">
-          <string>船长</string>
+          <string>航线</string>
          </attribute>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
@@ -336,6 +341,35 @@
              <layout class="QHBoxLayout" name="horizontalLayout_3"/>
             </item>
            </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>其他</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QTableWidget" name="tableWidget_2">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <column>
+             <property name="text">
+              <string>船名</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>航次号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>备注</string>
+             </property>
+            </column>
+           </widget>
           </item>
          </layout>
         </widget>

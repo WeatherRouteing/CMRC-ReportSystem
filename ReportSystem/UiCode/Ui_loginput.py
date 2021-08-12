@@ -22,9 +22,18 @@ class Ui_LogInput(object):
         self.textEdit = QtWidgets.QTextEdit(LogInput)
         self.textEdit.setObjectName("textEdit")
         self.verticalLayout.addWidget(self.textEdit)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
         self.pushButton = QtWidgets.QPushButton(LogInput)
         self.pushButton.setObjectName("pushButton")
-        self.verticalLayout.addWidget(self.pushButton)
+        self.horizontalLayout.addWidget(self.pushButton)
+        self.pushButton_2 = QtWidgets.QPushButton(LogInput)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout.addWidget(self.pushButton_2)
+        self.pushButton_3 = QtWidgets.QPushButton(LogInput)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.horizontalLayout.addWidget(self.pushButton_3)
+        self.verticalLayout.addLayout(self.horizontalLayout)
         self.verticalLayout_2.addLayout(self.verticalLayout)
 
         self.retranslateUi(LogInput)
@@ -33,4 +42,6 @@ class Ui_LogInput(object):
     def retranslateUi(self, LogInput):
         _translate = QtCore.QCoreApplication.translate
         LogInput.setWindowTitle(_translate("LogInput", "Dialog"))
-        self.pushButton.setText(_translate("LogInput", "确认"))
+        self.pushButton.setText(_translate("LogInput", "天气"))
+        self.pushButton_2.setText(_translate("LogInput", "航线"))
+        self.pushButton_3.setText(_translate("LogInput", "其他"))
